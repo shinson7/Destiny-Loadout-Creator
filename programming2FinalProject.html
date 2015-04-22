@@ -4,12 +4,23 @@
 	
 	<script src = "programming2FinalProject.js"></script>
 
-	<p id="message">The computer has just generated a random number between 1 and 100. You will have 20 guesses to find the number. Guess whole numbers between 1 and 100 and the computer will tell you how close you are. NOTE: Guessing numbers above 100 will use up one of your guesses and you will get no information from the guess. If two different guesses are within the same range from the computer number the message will not change. So pay attention to your number of guesses left because that will change everytime you guess and can be used to tell if your guess was registered.
+	<p id="message"> 
+	Destiny Loadout Builder
 	</p>
 
 	<form>
-		Guess: <input type="text" name="Guess" id="guessBox"><br>
-		<input type="button" onclick="checkGuess()" value="Submit">
+		Gamertag: <input type="text" name="Gamertag" id="gamertag"><br> 
+		<input type="button" onclick="updatePlayer(player, gamertag.id)" value="Submit">
+		<br>
+		<br>
+
+		Class: <input type="text" name="Class" id="mainClass"><br>
+		<input type="button" onclick="updatePlayer(player, mainClass.id)" value="Submit">
+		<br>
+		<br>
+
+		SubClass: <input type="text" name="SubClass" id="subClass"><br>
+		<input type="button" onclick="updatePlayer(player, subClass.id)" value="Submit">
 	</form>
 
 </body>
